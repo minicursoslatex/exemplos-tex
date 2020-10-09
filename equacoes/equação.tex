@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{eqnarray}
+\usepackage{url}
+\usepackage[brazil]{babel}
+\title{Um simples exemplo de equações no \LaTeX}
+\author{Rafael Rampim Soratto  \\
+	Universidade Tecnológica Federal do Paraná, UTFPR,\\ Campo Mourão, PR, Brasil \\
+	\and 
+	\small{soratto@alunos.utfpr.edu.br}
+}
+
+\date{\today}
+
+\begin{document}
+	
+	\maketitle
+	\begin{abstract}
+		Um breve exemplo sobre equações do segundo grau utilizando a fórmula de bhaskara.
+	\end{abstract}
+	
+	\section{Equações do Segundo grau}
+	
+	\subsection{Introdução}
+	 De acordo com \cite{uol} a fórmula de Bhaskara é um método resolutivo para equações do segundo grau utilizado para encontrar raízes a partir dos coeficientes da equação.	
+	\subsection{Fórmula de Bhaskara}
+	 De acordo com a Equação \ref{eq:segundo_grau}, equações do segundo grau são equações definidas por polinômios de grau 2.Toda equação do segundo grau, em sua forma normal, estará escrita da seguinte maneira:
+	 % \usepackage{eqnarray}
+	 \begin{eqnarray}
+	  	ax^2+bx+c=0
+	 	\label{eq:segundo_grau}
+	 \end{eqnarray}
+	A fórmula de \textit{Bhaskara} foi criada a partir do método de completar quadrados. Seguindo esse método para os coeficientes genéricos a, b e c, obtém-se a seguinte expressão: 
+	
+	$$x = \frac{-b\pm \sqrt[2]{b^2-4ac}}{2a}$$
+		\label{eq:X}
+	\begin{thebibliography}{9}
+		\bibitem[UOL]{uol} \emph{Equações do segundo grau}, Dísponível em:
+		\url{https://brasilescola.uol.com.br/matematica/formula-bhaskara.htm}. Acesso em março de 2020.
+	\end{thebibliography}
+	
+\end{document}
