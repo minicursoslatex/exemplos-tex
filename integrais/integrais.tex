@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{eqnarray}
+\usepackage{url}
+\usepackage[brazil]{babel}
+\title{Um simples exemplo de equações no \LaTeX}
+\author{Rafael Rampim Soratto  \\
+	Universidade Tecnológica Federal do Paraná, UTFPR,\\ Campo Mourão, PR, Brasil \\
+	\and 
+	\small{soratto@alunos.utfpr.edu.br}
+}
+
+\date{\today}
+
+\begin{document}
+    \section{Matrizes}
+    $$
+        A=(a_{ij})_{3\times 3}=\left(\begin{array}{ccc}
+        1& 2 & 3 \\
+        4& 5 & 6\\
+        7& 8 & 9
+        \end{array} \right)
+    $$
+
+	\section{Integrais e Somatórios}
+	\subsection{Integral}
+	
+	Uma equação utilizando integral: 
+	
+	\begin{eqnarray}
+    X(s) = \int\limits_{t = -\infty}^{\infty} x(t) e^{-st}
+    dt x^2
+    \label{eq:Xs}
+    \end{eqnarray}
+
+    \subsection{Somatório}
+    
+    \begin{equation}
+     e(t) = 
+     \sum_{n=1}^{5} \frac{1}{2+n} \cos(2 \pi nt)
+    \end{equation}
+
+\end{document}
+
