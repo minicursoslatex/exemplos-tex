@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage{float}
+\usepackage[brazil]{babel}
+\title{Um simples exemplo de equações no \LaTeX}
+\author{Rafael Rampim Soratto  \\
+	Universidade Tecnológica Federal do Paraná, UTFPR,\\ Campo Mourão, PR, Brasil \\
+	\and 
+	\small{soratto@alunos.utfpr.edu.br}
+}
+\date{\today}
+
+\begin{document}
+    \section{Tabelas}
+
+\begin{table}[H]
+\caption{Nome Exemplo} 
+\label{tab:exemplo} 
+\begin{center}
+\begin{tabular}{|c|c|c|} 
+\hline
+CPF & Idade & Salario  \\
+xxx.xxx.xxx-yy & 20 & 2.000 R\$ \\ \hline
+xxx.xxx.xxx-yy & 22 & 2.002 R\$ \\ 
+\hline
+\end{tabular} 
+\end{center}
+\end{table}
+
+\section{Quadros}
+\begin{itemize}
+\item 
+	\begin{center}
+		
+\label{quadro:apelido} 
+\begin{tabular}{|c|c|}  
+
+\hline
+a  & b \\   
+\hline
+c  & d \\
+\hline 
+\end{tabular}
+
+\end{center}
+\item 
+\begin{center}
+	\begin{minipage}{1\linewidth}  %minipage de espaco 1
+		\centering
+		\begin{tabular}{||c||c||}  
+			\hline 
+			\begin{tabular}{c} 
+				Texto 1 
+			\end{tabular} 
+			& 
+			\begin{tabular}{c} 
+				Texto 2 
+			\end{tabular}  \\   % //quebra as linhas
+			
+			\begin{tabular}{c} 
+				Texto 3 
+			\end{tabular} 
+			& 
+			\begin{tabular}{c} 
+				Texto 4 
+			\end{tabular} 
+			\\  
+			\hline   
+		\end{tabular}  
+	\end{minipage} 
+\end{center} 
+
+\end{itemize}
+\end{document}
+
