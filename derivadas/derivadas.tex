@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{eqnarray}
+\usepackage{listings}
+\usepackage{url}
+\usepackage[brazil]{babel}
+\title{Um simples exemplo de equações no \LaTeX}
+\author{Rafael Rampim Soratto  \\
+	Universidade Tecnológica Federal do Paraná, UTFPR,\\ Campo Mourão, PR, Brasil \\
+	\and 
+	\small{soratto@alunos.utfpr.edu.br}
+}
+
+\date{\today}
+
+\begin{document}
+	
+	\maketitle
+	\begin{abstract}
+		Um breve exemplo sobre limites e derivadas
+	\end{abstract}
+ 
+\subsubsection{Limites e Derivadas}     
+
+Para inserir no texto um limite, basta utilizar um comando do tipo: 
+\begin{lstlisting}
+\begin{itemize}
+\item $\lim\limits_{x \to a} f(x)=f(a)$;
+\item $\lim_{x \to a} f(x)=f(a)$;
+\item $\displaystyle\lim_{x \to a} f(x)=f(a)$
+\item $$\lim_{x \to a} f(x)=f(a)$$
+\end{itemize}
+\end{lstlisting} 
+\textbf{Resultado}: 
+
+\begin{itemize}
+	\item $\lim\limits_{x \to a} f(x)=f(a)$;
+	\item $\lim_{x \to a} f(x)=f(a)$;
+	\item $\displaystyle\lim_{x \to a} f(x)=f(a)$
+	\item $$\lim_{x \to a} f(x)=f(a)$$
+\end{itemize}
+
+Derivadas podem ser denotadas por 
+\begin{lstlisting}
+f^{\prime}
+\end{lstlisting}
+
+\textbf{Resultado}: 
+
+\begin{enumerate}
+	\item $f^{\prime}(x)$;
+	\item $f^{\prime\prime}$;
+	\item $f''$
+	\item $y^{(5)}+y^{\prime\prime}$;
+	\item $e$
+	\item $\dot{z}$
+	\item $\frac{d^3y}{dx^3}$;
+	\item $\frac{\partial f}{\partial x}$;
+	\item $\frac{\partial^2 f}{\partial x^2}$;
+	\item $\frac{\partial^2 f}{\partial x\partial y}$;
+	\item $\frac{\partial f}{\partial x}(a,b)=\lim\limits_{h \to 0} \frac{f(a+h,b)-f(a,b)}{h}$;
+\end{enumerate} 
+
+
+	
+\end{document}
